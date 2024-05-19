@@ -1,0 +1,60 @@
+:root {
+  --dangerBgColor: #f44336;
+  --dangerBgText: #ffffff;
+  --infoTextColor: #000;
+  --rootBgColor: #eec0c8;
+  --townDetailsBgColor: #fbfcfc;
+  --border-radius: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}
+
+h2 {
+  color: var(--infoTextColor)
+}
+
+#root {
+  height: fit-content;
+  padding: 20px;
+  max-width: 600px;
+  background-color: var(--rootBgColor);
+  border-radius: var(--border-radius);
+}
+
+#adminDivisionForm {
+  flex-direction: column;
+}
+
+
+#townDetails {
+  width: 560px;
+  background-color: var(--townDetailsBgColor);
+  display: none;
+  padding: 20px;
+  border-radius: var(--border-radius)
+}
+
+
+#errorAlert {
+  background-color: var(--dangerBgColor);
+  color: var(--dangerTextColor);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  color: var(--dangerBgText);
+}
+
+span {
+  font-weight: bolder;
+}
